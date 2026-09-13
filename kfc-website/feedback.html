@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Feedback form for KFC Nurly Zhol branch.">
+  <meta name="author" content="Balymbetova Dilnaz">
+  <title>KFC Nurly Zhol Station - Feedback</title>
+</head>
+<body>
+
+  <!-- Author: Balymbetova Dilnaz -->
+
+  <header>
+    <h1>Feedback and Pre-order Form</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="colophon.html">Colophon</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Leave Your Comment</h2>
+      
+      <form action="#" method="post">
+        <!-- Form does not submit data yet because backend is not implemented in Assignment 1 -->
+        
+        <fieldset>
+          <legend>Contact Information</legend>
+          
+          <p>
+            <label for="username">Your Name:</label><br>
+            <input type="text" id="username" name="username" placeholder="Balymbetova Dilnaz" required>
+          </p>
+
+          <p>
+            <label for="useremail">Email Address:</label><br>
+            <input type="email" id="useremail" name="useremail" placeholder="dilnaz@example.com" required>
+          </p>
+
+          <p>
+            <label for="usertel">Phone Number:</label><br>
+            <input type="tel" id="usertel" name="usertel" placeholder="+77001234567" required>
+          </p>
+
+          <p>
+            <label for="visitdate">Date of Visit:</label><br>
+            <input type="date" id="visitdate" name="visitdate" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Details</legend>
+
+          <p>
+            <label for="itemcount">Quantity:</label><br>
+            <input type="number" id="itemcount" name="itemcount" min="1" max="10" placeholder="1" required>
+          </p>
+
+          <p>Dipping Sauce:<br>
+            <label><input type="radio" name="sauce" value="cheese" checked> Cheese</label><br>
+            <label><input type="radio" name="sauce" value="bbq"> BBQ</label>
+          </p>
+
+          <p>
+            <label><input type="checkbox" name="takeaway" value="yes"> Takeaway for train</label>
+          </p>
+
+          <p>
+            <label for="branch-select">Select Branch:</label><br>
+            <select id="branch-select" name="branch">
+              <option value="nurlyzhol" selected>Nurly Zhol Station Branch</option>
+              <option value="kabanbay">Kabanbay Batyr Ave Branch</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="user-comments">Comments:</label><br>
+            <textarea id="user-comments" name="user-comments" rows="4" cols="40" placeholder="Type your message here..."></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Menu Board Photo</h2>
+      <figure>
+        <img src="images/menu.jpg" alt="Menu board photo at KFC Nurly Zhol" width="500">
+        <figcaption>Photo of the menu board taken by Balymbetova Dilnaz at the station counter.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="tel:+77172000000">+7 (7172) 00-00-00</a> | <a href="mailto:info@kfc.kz">info@kfc.kz</a></p>
+    <p>&copy; 2026 Balymbetova Dilnaz.</p>
+  </footer>
+
+</body>
+</html>
